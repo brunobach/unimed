@@ -1,0 +1,54 @@
+{
+  "name": "unimed_form",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:liferay": "lnbs-build",
+    "deploy:liferay": "yarn run build:liferay && lnbs-deploy"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "liferay-npm-build-support": "^2.24.3",
+    "liferay-npm-bundler": "^2.24.3",
+    "liferay-npm-bundler-preset-create-react-app": "^2.24.3"
+  },
+  "portlet": {
+    "com.liferay.portlet.display-category": "category.sample",
+    "javax.portlet.name": "unimed_form",
+    "javax.portlet.security-role-ref": "power-user,user",
+    "javax.portlet.resource-bundle": "content.Language",
+    "com.liferay.portlet.instanceable": true,
+    "com.liferay.portlet.header-portlet-css": "/static/css/main.chunk.css"
+  }
+}
