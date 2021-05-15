@@ -23,7 +23,8 @@
   </a>
 </p>
 
-> 1: Uma das exigencias foi: "O banco de dados utilizado deverá ser o Oracle." Iniciei o desenvolvimento com este banco através deste [Guia](https://blogs.oracle.com/oraclemagazine/deliver-oracle-database-18c-express-edition-in-containers). Porém depois de alguns dias, o ambiente nao subiu de forma alguma! Procurei soluções através de issues no git e stackoverflow, foruns etc. Mas atrasei o desenvolvimento e resolvi, utilizar o Postgres para agilizar e não retartar a entrega.
+
+> 1: Uma das exigências foi: “O banco de dados utilizado deverá ser o Oracle.” Iniciei o desenvolvimento com este banco através deste [Guia](https://blogs.oracle.com/oraclemagazine/deliver-oracle-database-18c-express-edition-in-containers). Porém, depois de alguns dias, o ambiente não subiu de forma alguma! Procurei soluções através de issues no git e stackoverflow, fóruns etc., mas atrasei o desenvolvimento e resolvi, utilizar o Postgres para agilizar e não retardar a entrega.
 
 > 2: Criei um widget através do React, e fiz a integração com o Portal Liferay. Pode ser que não seja este o ponto do desafio, mas foi a maneira que encontrei de realizar essa integração.
 
@@ -79,7 +80,7 @@ $ cd unimed/portlet
 	"liferayDir": "C:\\Liferay\\liferay-dxp-7.2.1"
 }
 
-# Executar o comando para instalar as dependencias
+# Executar o comando para instalar as dependências 
 $ yarn 
 
 #Ou
@@ -88,5 +89,23 @@ $ npm install
 # Depois execute o comando
 $ yarn deploy:liferay
 
-# Após instalado o widget estará disponivel para utilizar dentro do portal do liferay, podendo ser integrado a qualquer pagina
+# Após instalado o widget estará disponivel para utilizar dentro do portal do liferay, podendo ser integrado a qualquer página
 ```
+
+## Demostração do Projeto no Liferay Portal
+
+<h1 align="center">
+    <img alt="Unimed mockup" title="#UnimedTeste" src=".github/mockup.png"/>
+</h1>
+
+## Fontes
+
+- https://github.com/cslr1126/service-panels
+- https://github.com/tmoreira2020/spring-boot-liferay-portlet
+- https://github.com/kkaravitis/angular-spring-boot-portlets
+- https://www.youtube.com/watch?v=s7Htx7LUweg
+- https://www.youtube.com/watch?v=JboavhUQkEU
+- https://www.youtube.com/watch?v=7QhrnoIsqww
+- https://www.youtube.com/watch?v=ytfRophBheg
+- E muito mas muito mesmo: https://web.liferay.com/pt/community/liferay-projects/liferay-faces/documentation
+
