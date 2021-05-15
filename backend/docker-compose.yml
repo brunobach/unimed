@@ -1,6 +1,6 @@
 version: "3"
 services:
-  tad:
+  db:
     image: postgres:9.6
     container_name: "postgres"
     environment:
@@ -16,3 +16,25 @@ services:
       
     ports:
       - 5432:5432
+    networks:
+    - backend
+  
+  java:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8089:8089"
+    restart: always
+    depends_on: 
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/unimed
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 1234     
+    networks: 
+      - backend
+
+networks:
+  backend:
+    
